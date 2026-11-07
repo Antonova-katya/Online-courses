@@ -54,7 +54,11 @@ function validateName() {
 }
 
 function validateEmail() {
-    if (!emailInput.value.includes("@") || !emailInput.value.includes(".")) {
+    let value = emailInput.value.trim();
+
+    let emailPattern = /^[a-zA-Z0-9._%+-]{2,}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailPattern.test(value)) {
         emailError.textContent = "Введіть коректний email";
         setInvalid(emailInput);
         return false;
