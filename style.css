@@ -13,9 +13,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.666);
 }
 
-h2 {
-    text-align: center;
-}
+h2 { text-align: center;}
 
 /* Поля */
 input {
@@ -29,9 +27,7 @@ input {
 }
 
 /* Підсвітка */
-input:hover {
-    border-color: #4923f5;
-}
+input:hover { border-color: #4923f5;}
 
 input:focus {
     outline: none;
